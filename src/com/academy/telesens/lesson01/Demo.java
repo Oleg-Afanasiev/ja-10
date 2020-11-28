@@ -33,8 +33,12 @@ public class Demo {
         System.out.print("Введите ваше имя: ");
         Scanner scanner = new Scanner(System.in); // настраиваем сканер
         String name = scanner.nextLine(); // считываем имя с консоли
+        System.out.print("Введите ваш возраст: ");
         Integer age = scanner.nextInt(); // Вводим целое число
-        System.out.println(String.format("Привет %s!", name)); // выводим приветствие
+        scanner.nextLine();
+        System.out.print("Введите вашу фамилию: ");
+        String lastName = scanner.nextLine();
+        System.out.println(String.format("Привет %s %d %s!", name, age, lastName)); // выводим приветствие
 
 //        Demo.method();
 //        Demo demo = new Demo();
