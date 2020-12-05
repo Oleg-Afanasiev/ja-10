@@ -1,5 +1,7 @@
 package com.academy.telesens.lesson04;
 
+import java.util.Arrays;
+
 public class Exc {
     public static void main(String[] args) {
         // 1 Вывести массив строк ["One", "Two", "Three"]
@@ -37,5 +39,22 @@ public class Exc {
             System.out.print((char)i);
             System.out.print(" ");
         }
+
+        System.out.println("***sort***");
+        Arrays.sort(words);
+        System.out.println(Arrays.toString(words));
+
+        System.out.println("***equals***");
+        String[] words1 = {"One", "Two", "Three"};
+        String[] words2 = {"One", "Two", "Three"};
+        System.out.println(Arrays.equals(words1, words2));
+        words2[0] = "Hello";
+        System.out.println(Arrays.equals(words1, words2));
+
+        System.out.println("Сравнение чисел");
+        Integer m1 = 200;
+        Integer m2 = 200;
+        System.out.println(m1.equals(m2));
+
     }
 }
