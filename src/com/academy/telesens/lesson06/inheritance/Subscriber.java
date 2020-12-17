@@ -62,8 +62,8 @@ public class Subscriber extends Person {
 //        return String.format("First name: %s\n Last name: %s\n Age: %s\n Gender: %s\n PhoneNumber: %s\n Operator: %s\n",
 //                firstName, lastName, age, gender, phoneNumber, operator.getName());
 
-        return super.getProfile() + String.format(" PhoneNumber: %s\n Operator: %s\n",
-                phoneNumber, operator.getName());
+        return super.getProfile() + String.format(" PhoneNumber: %s\n Operator: \n",
+                phoneNumber);
     }
 
     @Override
