@@ -2,6 +2,9 @@ package com.academy.telesens.lesson06;
 
 import com.academy.telesens.lesson06.inheritance.Operator;
 import com.academy.telesens.lesson06.inheritance.Subscriber;
+import com.academy.telesens.lesson07.enumeration.Gender;
+
+import static com.academy.telesens.lesson07.enumeration.Gender.MALE;
 
 public class Demo {
     public static void main(String[] args) {
@@ -10,7 +13,7 @@ public class Demo {
         );
 
         Operator operator = new Operator("Vodafone", "Kiev");
-        Subscriber subscriber = new Subscriber("Иван", "Иванов", 25, 'm', "0661234567", operator);
+        Subscriber subscriber = new Subscriber("Иван", "Иванов", 25, MALE, "0661234567", operator);
 //        subscriber.setFirstName("Петя");
         String profile = subscriber.getProfile();
         System.out.println(profile);

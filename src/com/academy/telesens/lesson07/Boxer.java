@@ -1,8 +1,9 @@
 package com.academy.telesens.lesson07;
 
 import com.academy.telesens.lesson05.oop.Person;
+import com.academy.telesens.lesson08.Fighter;
 
-public class Boxer extends Person {
+public class Boxer extends Person implements Fighter {
     public void fight() {
         System.out.println("boxing");
     }
@@ -14,6 +15,6 @@ public class Boxer extends Person {
 
     @Override
     public String toString() {
-        return "Boxer{}";
+        return super.toString() + "Boxer{}";
     }
 }

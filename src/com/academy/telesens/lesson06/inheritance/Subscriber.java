@@ -1,6 +1,7 @@
 package com.academy.telesens.lesson06.inheritance;
 
 import com.academy.telesens.lesson05.oop.Person;
+import com.academy.telesens.lesson07.enumeration.Gender;
 
 public class Subscriber extends Person {
     private String phoneNumber;
@@ -13,7 +14,7 @@ public class Subscriber extends Person {
             String firstName,
             String lastName,
             Integer age,
-            Character gender,
+            Gender gender,
             String phoneNumber,
             Operator operator
             ) {
