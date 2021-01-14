@@ -1,7 +1,9 @@
 package com.academy.telesens.lesson09;
 
+import com.academy.telesens.lesson02.Exc;
 import com.academy.telesens.lesson05.oop.Person;
 import com.academy.telesens.lesson08.Programmer;
+import org.w3c.dom.ls.LSOutput;
 
 public class ExceptionDemo {
     public static void main(String[] args) {
@@ -31,10 +33,17 @@ public class ExceptionDemo {
 //        System.out.println(n1/n2);
 
         Person person = new Person();
-        person.setAge(-5); // => возраст отрицательный
-        person.setAge(140); // => пока столько не живут
-
         person.setAge(24);
+
+        try {
+            person.setAge(-5); // => возраст отрицательный
+            person.setAge(140); // => пока столько не живут
+        } catch (NegativeAgeError e) {
+
+        } catch (TooBigAgeError e) {
+
+        }
+
         System.out.println("FINISH");
     }
 
