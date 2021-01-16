@@ -52,5 +52,9 @@ public class ListDemo {
         listInt.sort((n1, n2)-> n1.compareTo(n2)); // 1 способ
         listInt.sort(Integer::compareTo); // 2 способ
         System.out.println(listInt);
+
+        List<String> names = new ArrayList(Arrays.asList("Helen", "Olga"));
+        names.sort(String::compareTo);
+        System.out.println(names);
     }
 }
